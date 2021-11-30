@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background: orange;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+main {
+  background: silver;
+  height: 200vh;
+  position: relative;
+  top: 100px;
+}
+
+.red-square {
+  background: firebrick;
+  height: 200px;
+  position: relative;
+  width: 200px;
+}
+
+.circle {
+  background: forestgreen;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
+
+.box {
+  background-color: dodgerblue;
+  height: 100px;
+  width: 100px;
+  /* up right bottom left */
+  /* D.R.Y */
+  /* padding: 10px 10px 10px 10px; */
+  /* padding: 10px; */
+  /* padding: 10px 20px 10px 20px; */
+
+  /* padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-left: 20px; */
+
+  padding: 10px;
+}

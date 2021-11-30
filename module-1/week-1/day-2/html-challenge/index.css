@@ -35,12 +35,14 @@ td {
   text-align: center;
 }
 
+/* CSS rule starts */
 .box {
-  height: 100px;
+  height: 100px; /* key / value pairs */
   width: 100px;
   background: dodgerblue;
   border: 2px solid;
 }
+/* rule ends */
 
 .title {
   font-size: 1.5rem;

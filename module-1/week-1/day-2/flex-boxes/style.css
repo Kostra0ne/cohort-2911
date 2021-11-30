@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: silver;
+}
+
+/* media queries > @media + settings  */
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries */
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  flex-direction: row;
+  margin-bottom: 50px;
+}
+
+/* x / y here > if it's a row  */
+.box {
+  align-items: center; /* y axis */
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /* x axis */
+  flex: 1;
+  font-size: 16px;
+  height: 100px;
+  margin-bottom: 1px;
+}
+
+@media (max-width: 700px) {
+  body {
+    background: firebrick;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+}
+
+#row-2 {
+  justify-content: space-between;
+  display: flex;
+}
+
+#row-2 .box {
+  max-width: 100px;
+}
