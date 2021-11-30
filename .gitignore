@@ -1,0 +1,6 @@
+.DS_Store
+_random/
+_random-team/
+private/
+node_modules
+.env
