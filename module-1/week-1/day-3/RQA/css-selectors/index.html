@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      span {
+        color: red;
+      }
+      a {
+        color: inherit;
+      }
+      /* a {
+            color: palevioletred
+        }
+        a:hover {
+            font-size: 20px;
+            color: green
+        } */
+
+      #header-main {
+        display: flex;
+        justify-content: space-between;
+        height: 100px;
+        align-items: center;
+        background: silver;
+      }
+
+      .logo + nav {
+        color: red;
+      }
+
+      p a {
+        color: blueviolet;
+        font-weight: bolder;
+      }
+
+      p > a {
+        text-decoration: none;
+      }
+
+      .link.is-selected {
+        font-size: 40px;
+      }
+
+      .user {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+
+      .user.is-selected {
+        background: purple
+      }
+    </style>
+    <script type="module">
+      document.getElementById("user").onclick = (e) => {
+        e.target.classList.toggle("is-selected")
+      }
+    </script>
+  </head>
+  <body>
+
+
+    <div id="user" class="user">
+      im user
+    </div>
+
+    <!-- <button class="link">click me</button>
+    <button class="link-is-selected">me too</button>
+    <button class="link is-selected">hey hey</button>
+    <button class="link is-selected">hey too</button> -->
+
+    <!-- <header id="header-main">
+      <div class="logo">my fake company</div>
+      <nav>home</nav>
+      <nav>foo</nav>
+    </header>
+    <main>
+      <p>
+        Lorem ipsum dolor sit ame t consectetur adipisicing elit. Quam
+        repudiandae
+        <span>
+          foo
+          <a href="">corrupti</a> bar
+        </span>
+        ullam. Corrupti beatae excepturi consequuntur, dolorem amet eius qui
+        <a href="">another link</a>
+        aperiam explicabo, labore optio, fuga reprehenderit temporibus impedit
+        laboriosam incidunt!
+      </p>
+    </main> -->
+  </body>
+</html>

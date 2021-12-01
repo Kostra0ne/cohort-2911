@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      #target {
+        height: 100px;
+        width: 100px;
+        padding: 20px;
+        position: relative;
+        border: 1px solid black;
+      }
+      #absolute-1 {
+        background: red;
+        bottom: 10px;
+        right: 10px;
+        z-index: 1;
+      }
+      #absolute-2 {
+        background: blue;
+        bottom: 15px;
+        right: 15px;
+      }
+      .lil-square {
+        position: absolute;
+        color: white;
+        height: 10px;
+        width: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="target">
+      <p id="absolute-1" class="lil-square"></p>
+      <p id="absolute-2" class="lil-square"></p>
+    </div>
+  </body>
+</html>

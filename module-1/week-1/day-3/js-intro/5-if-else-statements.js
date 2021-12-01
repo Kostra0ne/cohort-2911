@@ -21,9 +21,9 @@ const finalResult = -10;
 console.log("---------------------");
 
 if (finalResult < 10) {
-    console.log("you suck at this game friend");
+  console.log("you lost this game friend, try again");
 } else if (finalResult > 10 && finalResult < 100) {
-    console.log("you did ok friend");
-}  else {
-    console.log("you rock at this game ! congratz");
+  console.log("you did ok friend, keep up !");
+} else {
+  console.log("you rock at this game ! congratz");
 }
