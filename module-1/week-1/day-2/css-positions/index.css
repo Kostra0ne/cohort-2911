@@ -53,3 +53,22 @@ main {
 
   padding: 10px;
 }
+
+.absolute-box {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  height: 100px;
+  width: 100px;
+  background: cornflowerblue;
+}
+
+.absolute-box .target {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border: 1px solid;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}

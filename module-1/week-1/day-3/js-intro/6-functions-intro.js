@@ -36,7 +36,7 @@ function greeting(who, lang) {
 
   const baseGreeting = messages[lang] || messages["en"];
 
-  return baseGreeting + " " + (who || "Stranger");
+  return baseGreeting + " " + (who || "stranger");
 }
 
 // D.R.Y > Don't Reapeat Yourself
@@ -45,8 +45,7 @@ function greeting(who, lang) {
 
 console.log(greeting("Florian", "fr"));
 console.log(greeting("Silvia", "it"));
-console.log(greeting("Bill"));
-console.log(greeting());
+console.log(greeting("Bernard"));
 
 console.log("-----------------");
 // let user;
