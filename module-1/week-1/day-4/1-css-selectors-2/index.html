@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Selectors II</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial;
+        font-size: 16px;
+      }
+
+      #intro {
+        font-size: 1.1rem;
+      }
+
+      .list {
+        line-height: 1.9rem;
+        font-size: 1.2rem;
+      }
+
+      .list .item {
+        padding-left: 10px;
+      }
+
+      .has-border-bottom {
+        padding-bottom: 20px;
+        border-bottom: 1px solid;
+      }
+
+      .users {
+        color: green;
+      }
+      .users:empty {
+        border: 5px solid red;
+        min-height: 30px;
+      }
+
+      .item:hover {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header id="intro" class="has-border-bottom">
+
+      <!-- <hr>
+      <p class="users"></p>
+      <p class="users">text test</p>
+      <p class="users">
+        <div class="user">user 1</div>
+      </p>
+      <hr> -->
+
+      <h1>CSS Selectors II</h1>
+      Guess what's selected <b>:)</b><br />
+      Explain this with a simple sentence.<br />
+      Try to start your sentence with <i>Select all...</i> or
+      <i>Select the...</i>.
+    </header>
+    <ol class="list">
+      <li class="item">div a</li>
+      <li class="item">div, a</li>
+      <li class="item">div > a</li>
+      <li class="item">div#account a</li>
+      <li class="item">.user, .is-selected</li>
+      <li class="item">.user.is-selected</li>
+      <li class="item">.user .link.is-active</li>
+      <li class="item">.icon:not(.is-active)</li>
+      <li class="item">.icon.is-active:hover</li>
+      <li class="item">.users:empty</li>
+      <li class="item">#leaderboard .user:nth-child(2)</li>
+      <li class="item">#leaderboard .user:nth-child(odd)</li>
+      <li class="item">#leaderboard .user:nth-child(2n+2)</li>
+      <li class="item">#leaderboard > :first-child</li>
+      <li class="item">#leaderboard > :first-of-type</li>
+    </ol>
+
+  </body>
+</html>
+
+<!-- span:nth-of-type(6n+2) selects every 6th instance of a span, starting from (and including) the second instance. -->

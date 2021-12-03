@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .user {
+        height: 100px;
+        width: 100px;
+        /* background: pink; */
+      }
+
+      .user .link.is-active {
+        background: chocolate;
+      }
+
+      .icon:not(.is-active) {
+        color: red;
+      }
+
+      .icon.is-active {
+        color: green;
+      }
+
+      .icon.is-active:hover {
+        color: purple;
+        cursor: pointer;
+      }
+
+      .users {
+        background: darkblue;
+        color: white;
+      }
+
+      .users:empty {
+        min-height: 100px;
+        background: red;
+        color: white;
+      }
+/* 
+      #leaderboard .user:nth-child(2) {
+        background: green;
+      } */
+
+      #leaderboard > :first-of-type,
+      #leaderboard > .user:first-of-type {
+        background: green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="leaderboard">
+      <p>im a p</p>
+      <div>i'm a div</div>
+      <div>im a second div</div>
+      <div class="user">:)</div>
+      <div class="user">:/</div>
+
+    </ul>
+  </body>
+</html>
