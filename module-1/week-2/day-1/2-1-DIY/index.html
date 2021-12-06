@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script type="module">
+      //   document.getElementById("click-me").onclick = () => {
+      //     alert("YATA !");
+      //   };
+
+      function handlingFunc(evt) {
+        alert("YATA");
+      }
+
+    //   function handlingFunc2(evt) {
+    //     alert("YATA TOO");
+    //   }
+
+      const btn = document.getElementById("click-me");
+      btn.onclick = handlingFunc;
+
+      //   function genericHandler(cssSelector, eventType, callback) {
+      //     const els = document.querySelectorAll(cssSelector);
+      //     els.forEach((el) => el.addEventListener(eventType, callback));
+      //   }
+
+      //   genericHandler("#click-me", "click", handlingFunc);
+      //   genericHandler("#click-me-too", "mouseenter", handlingFunc2);
+    </script>
+  </head>
+  <body>
+    <button id="click-me">OK</button>
+    <!-- <button id="click-me-too">OK TOO</button> -->
+  </body>
+</html>

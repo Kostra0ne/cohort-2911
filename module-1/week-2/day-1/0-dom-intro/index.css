@@ -1,0 +1,43 @@
+@import url("./vars.css");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: Arial;
+  color: var(--color-main-dark);
+  padding: var(--space-m);
+}
+
+ul {
+  padding-left: var(--space-m);
+  margin-bottom: var(--space-m);
+}
+
+.title {
+  font-size: 1rem;
+  margin-bottom: var(--space-m);
+}
+
+.underlined {
+  text-decoration: underline;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.is-clickable {
+  cursor: pointer;
+}
+
+.is-clickable:hover {
+  color: var(--accent-color-hover);
+}
