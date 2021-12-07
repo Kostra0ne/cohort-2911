@@ -10,6 +10,9 @@
 //   return "wafff";
 // };
 
+// CONSTRUCTOR + PROTOTYPE === CONCEPTUALLY A CLASS
+
+
 class Cat {
   constructor(name, color) {
     this.name = name;
@@ -30,3 +33,5 @@ console.log(cat1 === cat2);
 
 console.log(cat1.talk());
 console.log(cat2.talk());
+
+
