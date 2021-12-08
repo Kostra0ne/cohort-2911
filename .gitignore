@@ -4,3 +4,5 @@ _random-team/
 private/
 node_modules
 .env
+
+*.soluce.js
