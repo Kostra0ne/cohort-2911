@@ -1,0 +1,83 @@
+body {
+    min-height: 200vh;
+    font-family: Avenir;
+    font-size: 16px;
+}
+.title {
+    color: dodgerblue;
+    font-size: 1.3rem;
+}
+.input[type=text] {
+    box-shadow: 0px 0.1px 2px 0.9px #696666;
+    border: none;
+    padding: 5px 10px 5px 20px;
+    height: 20px;
+}
+.btn {
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid;
+    border-radius: .3rem;
+    cursor: pointer;
+    display: inline-flex;
+    height: 32px;
+    justify-content: center;
+    min-width: 120px;
+}
+.btn:hover {
+    color: white;
+    background-color: dodgerblue;
+}
+p {
+    box-shadow: -0.9px 0.1px 6.1px 0.2px #696666;
+    border-radius: .1rem;
+    max-width: 400px;
+    padding: 10px;
+    text-align: justify;
+}
+p:empty {
+    display: none;
+}
+.item {
+    /* list-style: none; */
+}
+#nav_list {
+    background: dodgerblue;
+    color: white;
+    padding-left: 0;
+    display: flex;
+}
+#nav_list .item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    list-style: none;
+    min-height: 40px;
+}
+#nav_list .item:hover {
+    background: darkorange;
+}
+#heart {
+    width: 32px;
+    height: 32px;
+    transition: all 1s linear;
+}
+#heart.fadeout {
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+#states {
+    margin-top: 0;
+}
+#filter_states {
+    margin-right: 20px;
+}
+#tools {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+}
