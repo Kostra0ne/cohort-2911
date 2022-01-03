@@ -1,0 +1,49 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<nav>
+			<a href="/">Home</a>
+			<a href="/about">About</a>
+			<a href="/contacts">Contacts</a>
+		</nav>
+
+		<h1>This is the contact page</h1>
+
+		{{#if isAdmin}}
+
+			<h2>Welcome home, admin</h2>
+
+		{{else}}
+			<p>Who are you ?</p>
+
+		{{/if}}
+
+		<ul>
+			{{#each totos}}
+				{{!-- <p>{{this}}</p> --}}
+				<li>I am {{this.name}} I am {{age}} years old</li>
+			{{/each}}
+		</ul>
+		<ol>
+
+			{{#unless hasShoes}}
+
+				<p>You really should wear some shoes !</p>
+
+			{{/unless}}
+
+			{{#each someOtherUsers}}
+				<li>
+					{{this}}
+				</li>
+			{{/each}}
+
+		</ol>
+
+	</body>
+</html>

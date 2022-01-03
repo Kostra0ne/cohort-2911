@@ -1,0 +1,17 @@
+<h1>This is the Users page</h1>
+
+{{!-- <ul>
+	{{#each users}}
+		<li>
+			<img src={{picture}} alt={{name}} />
+			<p>{{name}}</p>
+		</li>
+	{{/each}}
+
+</ul> --}}
+
+{{#each users}}
+
+	{{> user this}}
+
+{{/each}}
