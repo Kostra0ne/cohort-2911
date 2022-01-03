@@ -3,24 +3,20 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		{{!-- {{#if css}} --}}
+		
 		{{#each css}}
 			<link rel="stylesheet" href="/css/{{this}}" />
 		{{/each}}
 
-{{!-- 
-		{{#each script}}
-			<script src="/js/{{this}}"></script>
-		{{/each}}
-		 --}}
-		{{!-- {{/if}} --}}
 		<title>My app</title>
 	</head>
 	<body>
 
 
 		{{> nav}}
-
+		<!--  When you render a view eg: res.render("home.hbs") 
+      the content of that hbs file will be inserted inside
+      {{{body}}} -->
 		<div class="main">
 			{{{body}}}
 		</div>

@@ -1,11 +1,17 @@
 const express = require("express");
+
 const app = express();
+
 const PORT = 4000;
 const hbs = require("hbs");
 
+// You will need to "Register" your partials, you tell hbs where to look for them 🕵️‍♂️
 hbs.registerPartials(__dirname + "/views/partials");
 
+// Setting the view engine for express to know he is serving hbs files
 app.set("view engine", "hbs");
+
+/** https://expressjs.com/en/starter/static-files.html  */
 app.use(express.static(__dirname + "/public"));
 
 app.get("/", (req, res) => {
@@ -36,9 +42,9 @@ app.get("/users", (req, res) => {
 			picture: "https://randomuser.me/api/portraits/men/5.jpg",
 		},
 	];
-	// x = x + 1
-	// x += 1
-	// users: users
+	// When a key and a variable have the same name, you can on certain instance
+	// Omit the value and just put one keyword, the key (Who has the same name as the variable)
+	// {users: users}   =>   {users}
 	res.render("users", {
 		users,
 		css: ["users.css"],
