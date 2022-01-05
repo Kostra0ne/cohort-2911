@@ -1,6 +1,4 @@
-// create one express app with 2 routers
-// - main (home / about )
-// - users (send a list of users as json)
+require("./config/mongo");
 
 const express = require("express"); // fetch the framework
 const hbs = require("hbs");
@@ -16,6 +14,7 @@ hbs.registerPartials(__dirname + "/views/partials");
 
 app.use("/", require("./routers/index.js"));
 app.use("/users", require("./routers/users.js"));
+app.use("/cats", require("./routers/cats.js"));
 
 // LISTEN
 app.listen(PORT, () =>
