@@ -1,0 +1,9 @@
+<h1>all hackers</h1>
+<ul>
+  {{#each hackers}}
+    <li>
+      <h2>{{this.name}} {{this.lastname}} ({{this._id}})</h2>
+      <a href="/hackers/{{this._id}}">see details</a>
+    </li>
+  {{/each}}
+</ul>

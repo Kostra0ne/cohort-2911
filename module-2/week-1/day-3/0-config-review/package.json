@@ -6,7 +6,8 @@
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1",
         "dev": "nodemon -e .hbs,.js",
-        "seed:cats": "node ./www/bin/seed/cats.js"
+        "seed:cats": "node ./www/bin/seed/cats.js",
+        "seed:hackers": "node ./www/bin/seed/hackers.js"
     },
     "keywords": [],
     "author": "",

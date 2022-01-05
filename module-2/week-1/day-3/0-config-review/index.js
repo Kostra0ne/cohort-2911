@@ -15,6 +15,7 @@ hbs.registerPartials(__dirname + "/views/partials");
 app.use("/", require("./routers/index.js"));
 app.use("/users", require("./routers/users.js"));
 app.use("/cats", require("./routers/cats.js"));
+app.use("/hackers", require("./routers/hackers.js"));
 
 // LISTEN
 app.listen(PORT, () =>

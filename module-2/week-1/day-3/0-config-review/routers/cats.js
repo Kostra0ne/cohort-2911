@@ -8,14 +8,14 @@ const CatModel = require("./../models/Cat");
 //   res.render("cats.hbs", { cats: x });
 // });
 
-router.get("/", async (req, res) => {
-  try {
-    const cats = await CatModel.find();
-    res.render("cats.hbs", { cats });
-  } catch (err) {
-    console.error(err);
-  }
-});
+// router.get("/", async (req, res) => {
+//   try {
+//     const cats = await CatModel.find();
+//     res.render("cats.hbs", { cats });
+//   } catch (err) {
+//     console.error(err);
+//   }
+// });
 
 router.get("/", (req, res) => {
   CatModel.find()
