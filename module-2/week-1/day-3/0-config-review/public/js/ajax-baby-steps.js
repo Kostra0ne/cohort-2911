@@ -14,9 +14,9 @@ function fetchAllUsersFromBackend() {
   axios
     .get("/users")
     .then((httpResponse) => {
-      display(httpResponse.data);
+      display(httpResponse.data)
     })
-    .catch(httpError);
+    .catch(httpError => console.error(httpError));
 }
 
 btn.onclick = fetchAllUsersFromBackend;
