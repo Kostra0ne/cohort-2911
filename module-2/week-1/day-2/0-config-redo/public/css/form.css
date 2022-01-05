@@ -1,0 +1,46 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 580px;
+  padding: 20px 0;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form input {
+  height: 32px;
+  border-radius: 0.3rem;
+  margin-bottom: 10px;
+}
+
+.form textarea {
+  border-radius: 0.3rem;
+  margin-bottom: 10px;
+}
+
+.form input,
+.form textarea {
+  border: 1px solid;
+}
+
+.form button {
+  max-width: fit-content;
+  min-width: 120px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: none;
+  border: 1px solid;
+  border-radius: .3rem;
+  cursor: pointer;
+}
+
+.form button:hover {
+  color: white;
+  background: black;
+}

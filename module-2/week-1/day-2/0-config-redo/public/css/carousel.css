@@ -1,0 +1,19 @@
+.carousel {
+  height: 180px;
+  max-width: 768px;
+  border: 2px solid;
+  position: relative;
+}
+
+.carousel .btn {
+  position: absolute;
+  top: 45%;
+}
+
+.carousel .btn.prev {
+  left: 0;
+}
+
+.carousel .btn.next {
+  right: 0;
+}

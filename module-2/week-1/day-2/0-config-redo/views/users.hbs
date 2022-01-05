@@ -1,0 +1,29 @@
+{{! display ul/li from an array of users objects }}
+{{! name, email, role (user|admin) }}
+<h1 class="title">Our community</h1>
+
+{{!-- <ul>
+  {{#each users}}
+    <li>
+      <span>user {{@index}}</span>
+      <ul>
+        <li>{{this.name}}</li>
+        <li>{{this.email}}</li>
+        <li>{{this.role}}</li>
+      </ul>
+    </li>
+  {{/each}}
+</ul> --}}
+
+<ul>
+  {{#each users}}
+    <li>
+      <span>user {{@index}}</span>
+      <ul>
+        {{#each this}}
+          <li>{{@key}}: {{this}}</li>
+        {{/each}}
+      </ul>
+    </li>
+  {{/each}}
+</ul>

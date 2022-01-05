@@ -1,0 +1,13 @@
+<h1>all my cats with &lt;3 </h1>
+<ul>
+  {{#each cats}}
+    <li>{{this}}</li>
+  {{/each}}
+</ul>
+
+<a href="/cats/last">wanna see the last cat ?</a>
+
+{{#if lastCat}}
+  <h2>last regitered cat</h2>
+  {{lastCat}}
+{{/if}}
