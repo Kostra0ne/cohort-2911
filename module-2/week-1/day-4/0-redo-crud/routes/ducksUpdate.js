@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Ducks = require("../models/RubberDuck.model");
 
 /**
- * Prefixed with /ducks
+ *! Prefixed with /ducks
  */
 
 router.get("/:id/update", (req, res) => {
