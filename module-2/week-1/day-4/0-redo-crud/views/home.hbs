@@ -1,1 +1,23 @@
 <h1>Welcome to the homepage</h1>
+
+<form action="/ducks/search">
+	<label for="search">Search:</label>
+	<input type="search" name="q" id="search" placeholder="Search a duck" />
+	<button>Search !</button>
+</form>
+
+{{#if searchedDucks}}
+
+	{{#each searchedDucks}}
+
+		<div class="card" style="background-color: {{this.color}};">
+			<img src="{{this.picture}}" alt="{{this.name}}" />
+			<p>{{this.name}}</p>
+			<a href="/ducks/{{this._id}}">More info...</a>
+		</div>
+
+	{{/each}}
+
+{{else}}
+	<p>No ducks to display...</p>
+{{/if}}

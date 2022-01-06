@@ -24,6 +24,7 @@ router.get("/", (req, res) => {
 //! Using RegEx to prevent entering the route.
 // "/:id([a-f0-9]{24})"
 router.get("/:id", (req, res, next) => {
+	console.log(req.params);
 	const isValidId = mongoose.isValidObjectId(req.params.id);
 	const id = req.params.id;
 	if (isValidId) {
@@ -59,8 +60,21 @@ const displayDuckForm = (req, res) => {
 	res.render("ducks/duckCreate.hbs");
 };
 
+const searchADuck = async (req, res) => {
+	console.log(req.query);
+	const searchedDucks = await Ducks.find({ color: req.query.q });
+
+	res.render("home", {
+		searchedDucks,
+		css: ["ducks"],
+	});
+};
+
 router.get("/:id/delete", deleteRubberDuck);
 router.get("/create", displayDuckForm);
+router.get("/search/", searchADuck);
+
+//! CREATE Router.
 router.post("/create", (req, res) => {
 	console.log(req.body);
 	// const name = req.body.name

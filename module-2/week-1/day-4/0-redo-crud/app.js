@@ -21,6 +21,7 @@ hbs.registerPartials(__dirname + "/views/partials");
 
 app.use("/", require("./routes/indexRouter.js"));
 app.use("/ducks", require("./routes/ducksRouter.js"));
+app.use("/ducks", require("./routes/ducksUpdate"));
 
 app.listen(3000, () => {
 	console.log("http://localhost:3000");
