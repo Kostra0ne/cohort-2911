@@ -11,7 +11,7 @@ router.get("/", (req, res) => {
 router.get("/:id([a-z0-9]{24})", async (req, res) => {
   // the req is an object representing the incoming http request
   // amongst other values, it contains the route parameters
-  // route.parameter > variable / placeholdres
+  // route.parameter > variable / placeholder
   // console.log("what is req params ?");
 //   console.log(req);
 //   console.log(req.params);
