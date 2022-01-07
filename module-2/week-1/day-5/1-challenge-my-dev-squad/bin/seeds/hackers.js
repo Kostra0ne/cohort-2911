@@ -43,6 +43,7 @@ const hackers = [
     console.log(`success : ${deletedCount} hackers deleted from database !`);
     const res = await HackerModel.insertMany(hackers);
     console.log(`success : ${res.length} hackers in database !`);
+    process.exit();
   } catch (err) {
     console.log("ERROR !");
     console.error(err);
