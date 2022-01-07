@@ -1,0 +1,17 @@
+{
+	"name": "0-redo-crud",
+	"version": "1.0.0",
+	"description": "",
+	"main": "app.js",
+	"scripts": {
+		"dev": "nodemon -e hbs,js app.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"express": "^4.17.2",
+		"hbs": "^4.2.0",
+		"mongoose": "^6.1.5"
+	}
+}

@@ -1,0 +1,24 @@
+<form action="/ducks/{{duck._id}}/update" method="POST">
+
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name" required value={{duck.name}} />
+
+	<label for="color">Color:</label>
+	<input type="text" id="color" name="color" value={{duck.color}} />
+
+	<label for="material">Material: </label>
+	<select name="material" id="material">
+		<option value="plastic">Plastic</option>
+		<option value="gold">Gold</option>
+		<option value="wood">Wood</option>
+	</select>
+
+	<label for="age">Age:</label>
+	<input type="number" id="age" name="age" value={{duck.age}} />
+
+	<label for="picture">Picture:</label>
+	<input type="text" id="picture" name="picture" value={{duck.picture}} />
+
+	<button>Update a ducky</button>
+
+</form>
