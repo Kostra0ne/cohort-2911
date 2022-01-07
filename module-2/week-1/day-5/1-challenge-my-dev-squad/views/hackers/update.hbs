@@ -1,0 +1,26 @@
+<form action="/hackers/{{hackerToEdit._id}}" method="post" class="form">
+
+  <h1>edit hacker <i>{{hackerToEdit.name}}</i></h1>
+  <label for="userName" class="label">name</label>
+  <input id="userName" name="name" type="text" value="{{hackerToEdit.name}}" />
+
+  <label for="userEmail" class="label">email</label>
+  <input
+    id="userEmail"
+    name="email"
+    type="email"
+    value="{{hackerToEdit.email}}"
+  />
+
+  <label for="favoriteLanguage">favorite Language</label>
+
+  <select name="favoriteLanguage" id="favoriteLangage">
+    <option value="js">js</option>
+    <option value="php">php</option>
+    <option value="java">java</option>
+    <option value="go">go</option>
+    <option value="ruby">ruby</option>
+  </select>
+
+  <button>ok</button>
+</form>

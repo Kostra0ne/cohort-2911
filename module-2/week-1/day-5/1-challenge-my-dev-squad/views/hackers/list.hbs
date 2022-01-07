@@ -1,12 +1,19 @@
 <h1>my dev squad !</h1>
-<ul id="list-hackers">
-  {{#each hackers}}
-    <li>
-      <span>{{this.name}}</span>
-      <p>
-        <a href="/hackers/delete"><i class="fa fa-trash"></i></a>
-        <a href="/hackers/details/{{this._id}}"><i class="fa fa-pen"></i></a>
-      </p>
-    </li>
-  {{/each}}
-</ul>
+<a href="/hackers/delete/all">delete all hacker</a>
+
+{{#if hackers.length}}
+  <ul id="list-hackers">
+    {{#each hackers}}
+      <li>
+        <span>{{this.name}}</span>
+        <p>
+          <a href="/hackers/delete/{{this._id}}"><i class="fa fa-trash"></i></a>
+          <a href="/hackers/edit/{{this._id}}"><i class="fa fa-pen"></i></a>
+        </p>
+      </li>
+    {{/each}}
+  </ul>
+{{else}}
+  <p>sorry no hackers yet</p>
+
+{{/if}}

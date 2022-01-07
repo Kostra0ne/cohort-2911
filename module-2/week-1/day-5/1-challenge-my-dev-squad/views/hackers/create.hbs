@@ -1,10 +1,22 @@
 <h1>create new hacker</h1>
+
+{{! http://localhost:8080/hackers }}
+{{! action : do you wanna go ? }}
+{{! method: what is the delivery method }}
+
+{{! cat = { name: "kitty" } }}
+{{! <input type="text" name="name" }}
+
 <form action="/hackers" method="post" class="form">
+
   <label for="userName" class="label">name</label>
-  <input id="userName" name="userName" type="text" value="test hacker" />
+  <input id="userName" name="name" type="text" value="test hacker" />
+
   <label for="userEmail" class="label">email</label>
-  <input id="userEmail" name="userEmail" type="email" value="test@hacker.com" />
+  <input id="userEmail" name="email" type="email" value="test@hacker.com" />
+
   <label for="favoriteLanguage">favorite Language</label>
+
   <select name="favoriteLanguage" id="favoriteLangage">
     <option value="js">js</option>
     <option value="php">php</option>
@@ -12,5 +24,6 @@
     <option value="go">go</option>
     <option value="ruby">ruby</option>
   </select>
+
   <button>ok</button>
 </form>
