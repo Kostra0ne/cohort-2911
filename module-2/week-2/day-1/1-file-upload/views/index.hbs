@@ -1,0 +1,19 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<form method="post" action="/upload-image" enctype="multipart/form-data">
+  <label for="picture">picture</label>
+  <input type="file" name="picture" id="picture" />
+  <button>ok</button>
+</form>
+
+<hr />
+
+<ul>
+  {{#each files}}
+    <li>
+        <h2>{{this.name}}</h2>
+        <img src="{{this.URL}}" alt="a cool graphic" style="width: 128px">
+    </li>
+  {{/each}}
+</ul>
