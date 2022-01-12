@@ -7,13 +7,17 @@ const hackerModel = require("./../models/Hacker");
 // READ ALL
 // GET /hackers = fetch the hackers and pass them to a view
 router.get("/", async (req, res, next) => {
-  try {
-    res.render("hackers/list.hbs", {
-      hackers: await hackerModel.find(),
-    });
-  } catch (err) {
-    next(err);
-  }
+  // try {
+  //   res.render("hackers/list.hbs", {
+  //     hackers: await hackerModel.find(),
+  //   });
+  // } catch (err) {
+  //   next(err);
+  // }
+  hackerModel
+    .find()
+    .then((hackers) => res.render("hackers/list.hbs", { hackers }))
+    .catch(next);
 });
 
 // READ ONE
@@ -62,7 +66,6 @@ router.get("/edit/:id", (req, res, next) => {
     )
     .catch(next);
 });
-
 
 router.post("/:id", async (req, res, next) => {
   try {
