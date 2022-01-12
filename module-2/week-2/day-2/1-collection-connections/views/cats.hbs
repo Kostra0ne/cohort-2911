@@ -1,0 +1,45 @@
+<h1>Welcome to {{title}}</h1>
+<h2>view all cats</h2>
+
+{{#unless cats.length}}
+  <p>
+    Sorry, no cats in database yet !
+  </p>
+{{/unless}}
+
+<ul>
+  {{#each cats}}
+    <li>
+      {{this.name}}
+      <p>
+        <a href="/cats/{{this._id}}">see more...</a>
+        |
+        <a href="/update-cat/{{this._id}}">update</a>
+        |
+        <a href="/delete-cat/{{this._id}}">delete</a>
+        <hr />
+      </p>
+    </li>
+  {{/each}}
+</ul>
+
+<h2>Humans</h2>
+<ul>
+  {{#each humans}}
+    <li>
+      {{this.name}}
+      {{this.lastname}}
+      {{#if this.pet}}
+        owns a cat named
+        {{this.pet.name}}
+      {{/if}}
+    </li>
+  {{/each}}
+</ul>
+
+{{! 
+C  (done)
+R  (done)
+U  (done)
+D  (done)
+ }}

@@ -1,0 +1,20 @@
+<h1>create new cat</h1>
+{{!-- action : WHERE SHOULD THE DATA GO ? --}}
+{{!-- IT MUST BE LINKED TO A ROUTE --}}
+{{!-- this way is the legacy way : the synchronous method --}}
+<form method="post" action="/update-cat/{{cat._id}}">
+    {{!-- NAMES attributes ARE MANDATORY --}}
+    <p>
+        <label for="">name</label>
+        <input name="name" type="text" value="{{cat.name}}">
+    </p>
+    <p>
+        <label for="">age</label>
+        <input name="age" type="number" value="{{cat.age}}" pattern="[0-9]+">
+    </p>
+    <p>
+        <label for="">description</label>
+        <textarea name="description">{{cat.description}}</textarea>
+    </p>
+    <button>ok</button>
+</form>
