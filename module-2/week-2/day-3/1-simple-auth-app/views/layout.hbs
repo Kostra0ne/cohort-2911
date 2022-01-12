@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/mod.form.css' />
+  <link rel='stylesheet' href='/stylesheets/mod.message.css' />
+</head>
+
+<body>
+  <nav id="nav-main">
+    <a href="/">home</a>
+    <span>|</span>
+    {{#unless currentUser}}
+    <a href="/auth/signup">signup</a>
+    <span>|</span>
+    <a href="/auth/signin">signin</a>
+    <span>|</span>
+    {{else}}
+    <a href="/profile">profile</a>
+    <span>|</span>
+    <a href="/auth/signout">signout</a>
+    {{/unless}}
+  </nav>
+
+  {{friendlyMessage}}
+  {{{body}}}
+</body>
+
+</html>
