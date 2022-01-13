@@ -1,5 +1,42 @@
 <h1>{{title}}</h1>
 
+
+<hr>
+
+<div id="diy">
+    <input type="text" id="hacker-id" value="61d850a24edc35e03af5430c">
+    <button id="fetch-hacker">fetch one hacker by id</button>
+    <pre id="fetched-hacker-result"></pre>
+</div>
+
+<script>
+const btn = document.getElementById("fetch-hacker");
+const input = document.getElementById("hacker-id");
+const result = document.getElementById("fetched-hacker-result");
+
+/*
+btn.onclick = () => {
+    axios.get(`/hackers/api/${input.value}`)
+    .then(hacker => result.textContent = JSON.stringify(hacker.data))
+    .catch(err => console.error(err))
+}
+*/
+
+btn.onclick = async () => {
+    try {
+        const hacker = await axios.get(`/hackers/api/${input.value}`)
+        result.textContent = JSON.stringify(hacker.data);
+    } catch(err) {
+        console.error(err)
+    }
+}
+
+</script>
+
+
+<hr>
+
 <p>Welcome to {{title}}</p>
 
 {{> imageGallery images}}
+

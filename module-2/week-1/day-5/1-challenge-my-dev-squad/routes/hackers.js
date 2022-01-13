@@ -20,6 +20,14 @@ router.get("/", async (req, res, next) => {
     .catch(next);
 });
 
+// GET /hackers/:id = fetch one hacker and send it back as json 
+router.get("/api/:id", async (req, res, next) => {
+  hackerModel
+    .findById(req.params.id)
+    .then((hacker) => res.json(hacker))
+    .catch(next);
+});
+
 // READ ONE
 // GET /hackers/:id = fetch one hacker and pass them to a view
 
