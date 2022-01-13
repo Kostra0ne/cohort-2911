@@ -26,8 +26,27 @@
   <button>ok</button>
 </div>
 
-<ul id="list-users">
-  {{#each users}}
-    <li>{{name}} - {{email}}</li>
-  {{/each}}
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>email</th>
+      <th>delete</th>
+      <th>update</th>
+    </tr>
+  </thead>
+  <tbody id="list-users">
+    {{#each users}}
+      <tr class="user">
+        <td>{{name}}</td>
+        <td>{{email}}</td>
+        <td>
+          <button class="btn delete" data-user-id="{{this._id}}">delete</button>
+        </td>
+        <td>
+          <button class="btn update" data-user-id="{{this._id}}">update</button>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

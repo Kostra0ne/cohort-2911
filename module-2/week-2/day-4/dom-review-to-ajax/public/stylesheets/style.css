@@ -4,5 +4,27 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+table {
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table,
+td,
+th {
+  border: 1px solid;
+}
+
+td,
+th {
+  padding: 10px;
+  min-width: 100px;
+  text-align: center;
+}
+
+tr.is-editing-mode {
+  background: #d8f6b9de;
 }

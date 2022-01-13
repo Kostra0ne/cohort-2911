@@ -22,7 +22,6 @@ router.get("/:id", (req, res, next) => {
   res.send("get one user from db");
 });
 
-
 router.post("/", (req, res, next) => {
   console.log("req.body >>>", req.body);
   userModel
@@ -32,11 +31,17 @@ router.post("/", (req, res, next) => {
 });
 
 router.patch("/:id", (req, res, next) => {
-  res.send("update one user in db");
+  userModel
+    .findByIdAndUpdate(req.params.id, req.body)
+    .then((updatedUser) => res.status(200).json(updatedUser))
+    .catch(next);
 });
 
 router.delete("/:id", (req, res, next) => {
-  res.send("delete one user from db");
+  userModel
+    .findByIdAndDelete(req.params.id)
+    .then((deleteUser) => res.status(200).json(deleteUser))
+    .catch(next);
 });
 
 module.exports = router;
