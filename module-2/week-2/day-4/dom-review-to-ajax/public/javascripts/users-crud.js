@@ -40,6 +40,7 @@ function displayUsers(users) {
 function appendUser(user) {
   listUsers.appendChild(generateListItem(user));
   listenOnDeleteButtons();
+  listenOnUpdateButtons();
 }
 
 //*****************************/
@@ -82,12 +83,9 @@ function handleUserCreate() {
 }
 
 function handleUpdate(evt) {
-  // get the clicked button
-  const btn = evt.target;
-  // get the id of the user we wanna update
-  const id = btn.getAttribute("data-user-id");
-  // get the parent row
-  const tr = btn.parentElement.parentElement;
+  const btn = evt.target;   // get the clicked button
+  const id = btn.getAttribute("data-user-id");   // get the id of the user we wanna update
+  const tr = btn.parentElement.parentElement;   // get the parent row
   // get the 2 first tds we wanna set as contenteditable
   const editableTds = tr.querySelectorAll("td:nth-child(1), td:nth-child(2)");
 
@@ -95,7 +93,7 @@ function handleUpdate(evt) {
   const parseTds = (callback) => editableTds.forEach(callback);
 
   // this toggles the contenteditable to true or false on a targeted td
-  const setUpdateMode = (td, mode) => td.setAttribute("contenteditable", mode);
+  const toggleUpdateMode = (td, mode) => td.setAttribute("contenteditable", mode);
 
   // set a green bg on the current edited row and changes the buttons text
   const toggleRowEditMode = () => {
@@ -106,13 +104,13 @@ function handleUpdate(evt) {
   // this starts the edit mode
   const startEditMode = () => {
     toggleRowEditMode(); // the row's background is green, the button text is 'save'
-    parseTds((td) => setUpdateMode(td, true)); // td are now editable
+    parseTds((td) => toggleUpdateMode(td, true)); // td are now editable
   };
 
   // this will revert to the initial state
   const stopEditMode = () => {
     toggleRowEditMode(); // the row's background is white, the button text is 'update
-    parseTds((td) => setUpdateMode(td, false)); // td are now NOT editable
+    parseTds((td) => toggleUpdateMode(td, false)); // td are now NOT editable
     listenOnUpdateButtons(); // the update buttons are listening to the initial callback
   };
 
