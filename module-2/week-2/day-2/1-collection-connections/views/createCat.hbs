@@ -1,0 +1,20 @@
+<h1>create new cat</h1>
+{{!-- action : WHERE SHOULD THE DATA GO ? --}}
+{{!-- IT MUST BE LINKED TO A ROUTE --}}
+{{!-- this way is the legacy way : the synchronous method --}}
+<form method="post" action="/create-cat">
+    {{!-- NAMES attributes ARE MANDATORY --}}
+    <p>
+        <label for="">name</label>
+        <input name="name" type="text" value="test cat">
+    </p>
+    <p>
+        <label for="">age</label>
+        <input name="age" type="number" value="10" pattern="[0-9]+">
+    </p>
+    <p>
+        <label for="">description</label>
+        <textarea name="description">a cool cat</textarea>
+    </p>
+    <button>ok</button>
+</form>

@@ -1,0 +1,52 @@
+<h1>Users Manager</h1>
+
+<h2>todos</h2>
+
+<ul id="list-todo">
+  <li>create a user</li>
+  <li>list all users</li>
+  <li>delete one user</li>
+  <li>delete all users</li>
+  <li>update one user</li>
+</ul>
+
+<div id="block-create-user">
+  <input
+    type="text"
+    id="new-user-name"
+    placeholder="user name"
+    value="test guy"
+  />
+  <input
+    type="email"
+    id="new-user-email"
+    placeholder="user email"
+    value="test@guy.com"
+  />
+  <button>ok</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>name</th>
+      <th>email</th>
+      <th>delete</th>
+      <th>update</th>
+    </tr>
+  </thead>
+  <tbody id="list-users">
+    {{#each users}}
+      <tr class="user">
+        <td>{{name}}</td>
+        <td>{{email}}</td>
+        <td>
+          <button class="btn delete" data-user-id="{{this._id}}">delete</button>
+        </td>
+        <td>
+          <button class="btn update" data-user-id="{{this._id}}">update</button>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

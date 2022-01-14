@@ -1,0 +1,20 @@
+{
+  "name": "2-render-lists-and-details",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www -e .js,.hbs",
+    "seed:cats": "node ./bin/seed.cats.js",
+    "seed:humans": "node ./bin/seed.humans.js"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "mongoose": "^5.12.7",
+    "morgan": "~1.9.1"
+  }
+}
