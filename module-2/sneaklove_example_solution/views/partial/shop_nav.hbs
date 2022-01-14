@@ -1,0 +1,57 @@
+{{!-- HEADER --}}
+
+{{!-- END HEADER --}}
+<div class="big-container">
+  <header class="header">
+    <nav class="nav-wrapper flexed-item">
+      <div class="nav-link-wrapper flexed-item">
+        <div class="nav-logo">
+          <a href="/home" class="flexed-item">
+            <span class="logo-item circle"></span>
+            <h2 class="logo-item">SNEAKLOVE</h2>
+          </a>
+        </div>
+        <ul class="nav-link flexed-item">
+          <li class="nav-item animated-link">
+            <a href="/sneakers/collection">Collection</a>
+          </li>
+          <li class="nav-item animated-link">
+            <a href="/sneakers/men">Men</a>
+          </li>
+          <li class="nav-item animated-link">
+            <a href="/sneakers/women">Women</a>
+          </li>
+          <li class="nav-item animated-link">
+            <a href="/sneakers/kids">Kids</a>
+          </li>
+          {{#if isLoggedIn}}
+          <li class="nav-item animated-link nav-item-admin">
+            <a href="/prod-add">Add product</a>
+          </li>
+          <li class="nav-item animated-link nav-item-admin">
+            <a href="/prod-manage">Manage products</a>
+          </li>
+          {{/if}}
+        </ul>
+      </div>
+      <div class="flexed-item nav-end">
+        {{#unless isLoggedIn}}
+        <a href="/signin" id="nav_login" class="button-ternary flexed-item nav-end-item">
+          <span class="btn-text">Sign in</span>
+        </a>
+        {{/unless}}
+        {{#if isLoggedIn}}
+        <a href="/logout" id="nav_logout" class="button-ternary flexed-item nav-end-item">
+          <span class="btn-text">Log out</span>
+        </a>
+        {{/if}}
+        <a href="/cart">
+          <div class="shop-cart">
+            <div class="cart-items">{{cart.length}}</div>
+            <i class="fas fa-shopping-cart shop-cart-icon nav-end-item"></i>
+          </div>
+        </a>
+      </div>
+    </nav>
+  </header>
+</div>

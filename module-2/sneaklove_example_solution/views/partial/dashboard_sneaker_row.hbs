@@ -1,0 +1,19 @@
+<td class="table-division">
+  <div><img src="{{this.image}}" alt="img" class="table-image" /></div>
+</td>
+<td class="table-division">
+  <div>{{this.name}}</div>
+</td>
+<td class="table-division">
+  <div>{{this.ref}}</div>
+</td>
+<td class="table-division">
+  <div>${{this.price}}</div>
+</td>
+<td class="table-division">
+  <a href="/prod-edit/{{this._id}}" data-id-sneaker="{{this._id}}" class="fa fa-edit table-icon"></a>
+</td>
+<td class="table-division">
+  <a href="/prod-delete/{{this._id}}"><span class="fa fa-trash table-icon" data-id-sneaker="{{this._id}}"
+      aria-hidden="true"></span></a>
+</td>

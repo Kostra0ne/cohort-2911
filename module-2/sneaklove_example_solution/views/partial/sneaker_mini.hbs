@@ -1,0 +1,33 @@
+{{#unless @root.cartDisplay}}
+<a href="/one-product/{{this._id}}" class="product-item-wrapper">
+    <div class="product-img">
+        <img src="{{this.image}}" alt="{{this.name}} : what a nice pair of kicks">
+    </div>
+    <p class="product-name">{{this.name}}</p>
+    <p class="product-cat">{{this.category}}</p>
+    <p class="product-price">{{this.price}}</p>
+    <ul class="product-list">
+        {{#each this.id_tags}}
+        <li class="item">{{this.label}}</li>
+        {{/each}}
+    </ul>
+</a>
+{{/unless}}
+
+{{#if @root.cartDisplay}}
+
+<a class="cart-remove" href="/cart/delete-item/{{this._id}}/{{this.size}}"><i class="fas fa-trash"></i></a>
+<div class="product-img">
+    <img src="{{this.image}}" alt="{{this.name}} : what a nice pair of kicks">
+</div>
+<p class="product-name">{{this.name}}</p>
+<p class="product-cat">{{this.category}}</p>
+<p class="product-price">{{this.price}}</p>
+<ul class="product-list">
+    {{#each this.id_tags}}
+    <li class="item">{{this.label}}</li>
+    {{/each}}
+</ul>
+<p>Selected size: {{this.size}}</p>
+
+{{/if}}

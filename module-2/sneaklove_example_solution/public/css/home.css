@@ -1,0 +1,16 @@
+.home-container {
+  height: calc(100vh - (84px));
+  overflow: hidden;
+  /* display: flex; */
+  /* justify-content: center; */
+  background: black;
+  width: 100%;
+  background-image: url("/medias/img/home-img-2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+/* .img-home {
+  width: 60%;
+} */
+

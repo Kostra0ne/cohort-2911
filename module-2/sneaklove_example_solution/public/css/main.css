@@ -1,0 +1,49 @@
+@import "./reset.css";
+@import "./header-nav.css";
+@import "./footer.css";
+@import "./form.css";
+@import "./button.css";
+@import "./products.css";
+@import "./products-forms.css";
+@import "./products-manage.css";
+@import "./login-signup.css";
+@import "./one-product.css";
+@import "./home.css";
+@import "./error.css";
+@import "./cart.css";
+
+@import url("https://fonts.googleapis.com/css?family=Faster+One|Oswald:300,400,500,700|Source+Sans+Pro:300,400,600,700&display=swap");
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+h2,
+h3,
+h4 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.big-container {
+  display: flex;
+  width: 100%;
+}
+
+.container {
+  width: 90%;
+}
+
+.flexed-item {
+  display: flex;
+}

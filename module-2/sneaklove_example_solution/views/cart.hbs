@@ -1,0 +1,10 @@
+<div class="cart-wrapper">
+    <h3 class="cart-total">Total: <span>{{totalPrice sneakers}}</span>€</h3>
+    <div class="cart-grid">
+        {{#each sneakers}}
+        <div class="grid-item">
+            {{>sneaker_mini this}}
+        </div>
+        {{/each}}
+    </div>
+</div>

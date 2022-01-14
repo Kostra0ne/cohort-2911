@@ -1,0 +1,30 @@
+{
+  "name": "shop-express",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cloudinary": "^1.14.0",
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^4.4.1",
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "hbs": "^4.1.1",
+    "mongoose": "^5.6.1",
+    "multer": "^1.4.2",
+    "multer-storage-cloudinary": "^2.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "seeds": "node ./bin/seeds.js",
+    "dev": "nodemon ./app.js -e js,hbs",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon ./app.js -e js,hbs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

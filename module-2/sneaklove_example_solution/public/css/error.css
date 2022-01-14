@@ -1,0 +1,27 @@
+#error-page {
+  background-image: url("../medias/img/page_505.png");
+  background-size: cover;
+  background-position: 0 0;
+  height: calc(100vh - 53px);
+  width: 100%;
+}
+
+.not-found {
+  padding: 80px;
+  font-size: 5rem;
+}
+
+.not-found .message {
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.not-found .button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: underline;
+}

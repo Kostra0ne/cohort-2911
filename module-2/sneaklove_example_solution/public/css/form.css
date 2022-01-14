@@ -1,0 +1,58 @@
+input:focus {
+  outline: none;
+}
+
+.input {
+  padding: .7rem;
+  border: none;
+  border: 1px solid black;
+  border-radius: .2rem;
+  font-size: .9rem;
+}
+
+/*----select option----*/
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* remove default arrow */
+  background-image: url("../medias/img/arrow_down.svg");
+  background-repeat: no-repeat;
+  background-position:
+    calc(100% - 21px) calc(1em + 2px),
+    calc(100% - 16px) calc(1em + 2px),
+    100% 0;
+  background-size:
+    9px 9px,
+    9px 9px,
+    2.5em 2.5em;
+  border-radius: .2rem;
+  border: 1px solid rgb(235, 235, 235);
+  /* add custom arrow */
+}
+
+select:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    color: rgb(151, 151, 151);
+    font-size: .9rem;
+
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgb(151, 151, 151);
+    font-size: .9rem;
+
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgb(151, 151, 151);
+    font-size: .9rem;
+
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgb(151, 151, 151);
+    font-size: .9rem;
+
+}
+

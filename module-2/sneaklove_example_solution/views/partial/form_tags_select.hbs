@@ -1,0 +1,6 @@
+<select multiple name="id_tags" id="tags" class="select">
+    <option value="-1" disabled selected>Choose a category</option>
+    {{#each tags}}
+    <option  {{isSelected ../sneaker.id_tags this._id}}  value="{{this._id}}">{{this.label}}</option>
+    {{/each}}
+</select>

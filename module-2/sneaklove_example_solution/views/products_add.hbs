@@ -1,0 +1,62 @@
+<div class="big-container product-manage-wrapper flexed-item">
+  <form action="/prod-add" method="POST" class="add-product-form" enctype="multipart/form-data">
+    {{#if msg}}
+    <p class="msg {{msg.statu}}">{{msg.txt}}</p>
+    {{/if}}
+    <h3 class="form-title">Add Sneackers to the collection</h3>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-name" class="label-name label">Model name</label>
+      <input "sneacker-name" type="text" class="input-text input" name="name" placeholder="Nike Air Max 90"
+        value="air max 1">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-ref" class="label-ref label">Réf.</label>
+      <input id="sneacker-ref" type="text" class="input-text input" name="ref" placeholder="ex: NV23498"
+        value="NV23498">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-sizes" class="label-ref label">Sizes</label>
+      <select multiple name="sizes" id="sneaker-sizes">
+        {{{handleSizes sizes}}}
+      </select>
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-descr" class="label-descr label">Description</label>
+      <input id="sneacker-descr" type="text" class="input-text input" name="description"
+        placeholder="The better sneakers to run" value="foo bar baz">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-price" class="label-price label">Price</label>
+      <input id="sneacker-price" type="number" class="sneacker-price input" name="price" min="1" value="123">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneaker-img" class="label-price label">Image</label>
+      <input id="sneaker-img" name="image" type="file" class="sneacker-price input">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="category" class="label-main-cat label">Main category</label>
+      <select id="category" name="category" class="select" required>
+        <option value="-1" disabled selected>Choose a category</option>
+        <option value="men">Men</option>
+        <option value="women">Women</option>
+        <option value="kids">Kids</option>
+      </select>
+    </div>
+
+    <div class="form-item-wrapper flexed-item">
+      <label for="tags" class="label">Tags</label>
+      {{> form_tags_select}}
+    </div>
+    <button class="button-primary add-sneacker-btn">Add to collection</button>
+  </form>
+
+  <div class="add-tag-form">
+    <p id="add-tag-message" class="msg"></p>
+    <h3 class="form-title">Add tags</h3>
+    <div class="form-item-wrapper flexed-item">
+      <label for="category-name" class="category-name label">Sneaker tag</label>
+      <input id="new_tag_name" type="text" class="input" placeholder="ex: Gangsta">
+    </div>
+    <button id="btn_new_tag" class="button-primary add-category-btn">Create this category</button>
+  </div>
+</div>

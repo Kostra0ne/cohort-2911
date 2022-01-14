@@ -1,0 +1,28 @@
+.cart-wrapper {
+  padding: 60px 80px;
+}
+
+.cart-grid {
+  padding: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 600px));
+  gap: 10px;
+}
+
+.cart-total {
+  font-size: 1.25rem;
+}
+
+.cart-grid .grid-item {
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.cart-grid .cart-remove {
+  position: absolute;
+  color: red;
+  bottom: 20px;
+  right: 20px;
+  font-size: 24px;
+}

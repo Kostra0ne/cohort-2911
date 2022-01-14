@@ -1,0 +1,46 @@
+.add-product-form, .edit-product-form{
+  width: 30%;
+  margin-right: 2rem;
+}
+.add-tag-form{
+  width: 30%;
+}
+
+.product-manage-wrapper{
+  padding: 2rem 1.2rem;
+}
+
+.form-item-wrapper {
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+}
+
+h3.form-title{
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding-bottom: .8rem;
+  margin-bottom: .8rem;
+  font-size:1.2rem; 
+}
+
+.select {
+  padding: .6rem;
+  font-size: 1rem;
+  font-family: 'Source Sans Pro'
+}
+
+
+.label {
+  margin-bottom: .5rem;
+  font-size: .9rem;
+
+}
+
+.msgstatus {
+  background: rgb(0, 202, 135);
+  color: white;
+  text-transform: uppercase;
+  font-size: .8rem;
+  padding: .8rem;
+  border-radius: .5rem;
+  margin-bottom: .5rem;
+}

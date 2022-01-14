@@ -1,0 +1,25 @@
+<div class="one-product-container">
+
+  <div class="sneak-info">
+    <div class="sneak-info-header">
+      <h1 class="sneak-name">{{sneaker.name}}</h1>
+      <p class="sneak-description">{{sneaker.description}}</p>
+      <p class="sneak-ref">Ref. {{sneaker.ref}}</p>
+    </div>
+  </div>
+  <div class="flexed-item">
+    <select name="main-category" id="size" class="select sneak-select">
+      <option value="-1" selected disabled>Choose Size</option>
+      {{#each sneaker.sizes}}
+      <option value="{{this}}">{{this}}</option>
+      {{/each}}
+    </select>
+    <button id="btn-add-to-cart" data-productid="{{sneaker._id}}" class="button-primary a-link">Add to cart <i
+        class="fas fa-shopping-cart shop-cart-icon-page"></i></button>
+  </div>
+
+  <div class="sneak-img-container">
+    <img src="{{sneaker.image}}" alt="img-product" class="sneak-img">
+  </div>
+
+</div>

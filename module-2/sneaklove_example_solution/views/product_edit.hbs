@@ -1,0 +1,45 @@
+<div class="big-container product-manage-wrapper flexed-item">
+  <form method="post" action="/prod-edit/{{sneaker._id}}" class="edit-product-form">
+    <h3 class="form-title"> Edit Sneaker</h3>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-name" class="label-name label">Model name</label>
+      <input id="sneacker-name" type="text" class="input-text input" placeholder="Nike Air Max 90" name="name"
+        value="{{sneaker.name}}">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-ref" class="label-ref label">Réf.</label>
+      <input id="sneacker-ref" type="text" class="input-text input" placeholder="ex: NV23498" value="{{sneaker.ref}}"
+        name="ref">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-sizes" class="label-ref label">Sizes</label>
+      <select multiple name="sizes" id="sneaker-sizes">
+        {{{handleSizes sizes sizes=sneaker.sizes handleSelect="true"}}}
+      </select>
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-descr" class="label-descr label">Description</label>
+      <input id="sneacker-descr" type="text" class="input-text input" placeholder="The better sneakers to run"
+        value="{{sneaker.description}}" name="description">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-price" class="label-price label">Price</label>
+      <input id="sneacker-price" type="number" class="sneacker-price input" min="1" value="{{sneaker.price}}"
+        name="price">
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label for="sneacker-main-cat" class="label-main-cat label">Main category</label>
+      <select id="main_category" class="select" required name="category">
+        <option value="-1" disabled selected>Choose main Category...</option>
+        <option {{isSelected sneaker.category "men"}} value="men">Men</option>
+        <option {{isSelected sneaker.category "women"}} value="women">Women</option>
+        <option {{isSelected sneaker.category "kids"}} value="kids">Kids</option>
+      </select>
+    </div>
+    <div class="form-item-wrapper flexed-item">
+      <label class="label">Tags</label>
+      {{> form_tags_select}}
+    </div>
+    <button class="button-primary add-sneacker-btn">Edit this sneaker</button>
+  </form>
+</div>

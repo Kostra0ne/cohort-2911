@@ -1,0 +1,107 @@
+aside.tag-wrapper {
+  width: 17%;
+  padding: 2rem 1.5%;
+}
+
+.tag-title {
+  font-size: 1.2rem;
+  border-bottom: 1px solid rgb(212, 212, 212);
+  padding-bottom: 0.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.tag-list-item {
+  color: rgb(151, 151, 151);
+  cursor: pointer;
+  line-height: 1.7;
+  display: flex;
+  align-items: center;
+}
+
+.checkbox {
+  margin-right: 0.4rem;
+}
+
+.products-wrapper {
+  width: 77%;
+  padding: 2rem 1.5%;
+}
+
+.products-infos {
+  margin-bottom: 2rem;
+}
+
+h4.products-title {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.products-count {
+  color: rgb(151, 151, 151);
+}
+
+.products-subtitle {
+  font-size: 0.9rem;
+  color: rgb(151, 151, 151);
+  max-width: 90%;
+  line-height: 1.3;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 10px;
+}
+/* .grid-item {
+} */
+
+.product-item-wrapper {
+  cursor: pointer;
+  width: 20%;
+  margin-right: 4%;
+  margin-bottom: 4%;
+  transition: all 0.2s ease-in;
+  transition-property: box-shadow;
+}
+
+.product-item-wrapper:hover {
+  box-shadow: inset 0 -3px 0 0 #111;
+}
+.product-img {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.product-img img {
+  width: 100%;
+}
+
+.product-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.product-cat {
+  color: rgb(151, 151, 151);
+  font-size: 0.9rem;
+  margin-bottom: 0.1rem;
+}
+
+.product-price {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.product-list {
+  display: flex;
+}
+
+.product-list .item {
+  margin: 5px;
+  padding: 5px;
+  font-size: 14px;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+}
