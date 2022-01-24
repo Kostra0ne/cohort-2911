@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" href="/stylesheets/style.css" />
+	</head>
+	<body>
+
+		<nav>
+			{{#unless isConnected}}
+				<a href="/signup">Signup</a>
+				<a href="/signin">Signin</a>
+
+			{{/unless}}
+			{{#if isConnected}}
+				<a href="/logout">Logout</a>
+				<a href="/profile">Profile</a>
+
+			{{/if}}
+		</nav>
+		{{{body}}}
+	</body>
+</html>
