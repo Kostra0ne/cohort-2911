@@ -10,13 +10,17 @@ function App() {
 		setContacts([...contacts, contact]);
 	};
 
+	const deleteContact = (email) => {
+		setContacts(contacts.filter((contact) => contact.email !== email));
+	};
+
 	return (
 		<div className="App">
 			<h1>Add a contact</h1>
 			<Form addSomeone={addContact} />
 			<hr />
 			<h2>List of contacts</h2>
-			<ContactList contacts={contacts} />
+			<ContactList contacts={contacts} deleteContact={deleteContact} />
 		</div>
 	);
 }

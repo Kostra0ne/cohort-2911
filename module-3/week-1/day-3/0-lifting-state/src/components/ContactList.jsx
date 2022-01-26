@@ -2,7 +2,7 @@ import React from "react";
 import OneContact from "./OneContact";
 
 const ContactList = (props) => {
-	const { contacts } = props;
+	const { contacts, deleteContact } = props;
 	return (
 		<>
 			{contacts.length > 0 ? (
@@ -10,7 +10,12 @@ const ContactList = (props) => {
 					{contacts.map((contact, i) => {
 						console.log(contact);
 						return (
-							<OneContact key={i} name={contact.name} email={contact.email} />
+							<OneContact
+								key={i}
+								name={contact.name}
+								email={contact.email}
+								deleteContact={deleteContact}
+							/>
 						);
 					})}
 				</div>
