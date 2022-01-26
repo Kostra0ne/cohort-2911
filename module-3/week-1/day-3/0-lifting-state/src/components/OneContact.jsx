@@ -1,10 +1,10 @@
 import React from "react";
 
 const OneContact = (props) => {
-	const { name, email, deleteContact } = props;
-	console.log(props);
+	const { name, email, callbackDelete } = props;
+	// console.log(props);
 	return (
-		<p onClick={() => deleteContact(email)}>
+		<p onClick={() => callbackDelete(email)}>
 			<span className="name">{name}</span>
 			<span className="email">{email}</span>
 		</p>

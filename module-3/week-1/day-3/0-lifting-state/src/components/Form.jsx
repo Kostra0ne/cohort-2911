@@ -9,6 +9,8 @@ const Form = ({ addSomeone }) => {
 		const contact = { name: name, email };
 		console.log(contact);
 		addSomeone(contact);
+		setName("");
+		setEmail("");
 	};
 
 	return (

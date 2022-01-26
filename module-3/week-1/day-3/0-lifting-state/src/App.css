@@ -59,10 +59,16 @@ button {
 
 .contact-list p {
 	display: flex;
+	padding: 0.5em;
+	margin: 0;
 }
 .contact-list .name {
 	margin-right: auto;
 }
 .contact-list .email {
 	margin-left: auto;
+}
+
+.contact-list p:nth-child(even) {
+	background-color: rgb(194, 191, 191);
 }
