@@ -3,6 +3,7 @@ import OneContact from "./OneContact";
 
 const ContactList = (props) => {
 	const { contacts, deleteContact } = props;
+
 	return (
 		<>
 			{contacts.length > 0 ? (
