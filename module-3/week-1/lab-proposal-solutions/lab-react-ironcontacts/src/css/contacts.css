@@ -1,0 +1,23 @@
+table thead {
+    font-weight: 700;
+}
+table td {
+    padding: .3em;
+    border-radius: 4px;
+}
+tbody img {
+    height: 100px;
+    border-radius: .5em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    border: 1px solid black;
+    padding: .3em 1em;
+    border-radius: 4px;
+}
