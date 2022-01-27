@@ -1,0 +1,227 @@
+[
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/001Bulbasaur.png",
+		"id": 0,
+		"name": "Bulbasaur"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/002Ivysaur.png",
+		"id": 1,
+		"name": "Ivysaur"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/003Venusaur.png",
+		"id": 2,
+		"name": "Venusaur"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/004Charmander.png",
+		"id": 3,
+		"name": "Charmander"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/005Charmeleon.png",
+		"id": 4,
+		"name": "Charmeleon"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/006Charizard.png",
+		"id": 5,
+		"name": "Charizard"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/007Squirtle.png",
+		"id": 6,
+		"name": "Squirtle"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/008Wartortle.png",
+		"id": 7,
+		"name": "Wartortle"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/009Blastoise.png",
+		"id": 8,
+		"name": "Blastoise"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/010Caterpie.png",
+		"id": 9,
+		"name": "Caterpie"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/011Metapod.png",
+		"id": 10,
+		"name": "Metapod"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/012Butterfree.png",
+		"id": 11,
+		"name": "Butterfree"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/013Weedle.png",
+		"id": 12,
+		"name": "Weedle"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/014Kakuna.png",
+		"id": 13,
+		"name": "Kakuna"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/015Beedrill.png",
+		"id": 14,
+		"name": "Beedrill"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/016Pidgey.png",
+		"id": 15,
+		"name": "Pidgey"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/017Pidgeotto.png",
+		"id": 16,
+		"name": "Pidgeotto"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/018Pidgeot.png",
+		"id": 17,
+		"name": "Pidgeot"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/019Rattata.png",
+		"id": 18,
+		"name": "Rattata"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/020Raticate.png",
+		"id": 19,
+		"name": "Raticate"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/021Spearow.png",
+		"id": 20,
+		"name": "Spearow"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/022Fearow.png",
+		"id": 21,
+		"name": "Fearow"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/023Ekans.png",
+		"id": 22,
+		"name": "Ekans"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/024Arbok.png",
+		"id": 23,
+		"name": "Arbok"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/025Pikachu.png",
+		"id": 24,
+		"name": "Pikachu"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/026Raichu.png",
+		"id": 25,
+		"name": "Raichu"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/027Sandshrew.png",
+		"id": 26,
+		"name": "Sandshrew"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/028Sandslash.png",
+		"id": 27,
+		"name": "Sandslash"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/029Nidoran♀.png",
+		"id": 28,
+		"name": "Nidoran♀"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/030Nidorina.png",
+		"id": 29,
+		"name": "Nidorina"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/031Nidoqueen.png",
+		"id": 30,
+		"name": "Nidoqueen"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/032Nidoran♂.png",
+		"id": 31,
+		"name": "Nidoran♂"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/033Nidorino.png",
+		"id": 32,
+		"name": "Nidorino"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/034Nidoking.png",
+		"id": 33,
+		"name": "Nidoking"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/035Clefairy.png",
+		"id": 34,
+		"name": "Clefairy"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/036Clefable.png",
+		"id": 35,
+		"name": "Clefable"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/037Vulpix.png",
+		"id": 36,
+		"name": "Vulpix"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/038Ninetales.png",
+		"id": 37,
+		"name": "Ninetales"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/039Jigglypuff.png",
+		"id": 38,
+		"name": "Jigglypuff"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/040Wigglytuff.png",
+		"id": 39,
+		"name": "Wigglytuff"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/041Zubat.png",
+		"id": 40,
+		"name": "Zubat"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/042Golbat.png",
+		"id": 41,
+		"name": "Golbat"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/043Oddish.png",
+		"id": 42,
+		"name": "Oddish"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/044Gloom.png",
+		"id": 43,
+		"name": "Gloom"
+	},
+	{
+		"picture": "https://ironhack-pokeapi.herokuapp.com/img/045Vileplume.png",
+		"id": 44,
+		"name": "Vileplume"
+	}
+]
