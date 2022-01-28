@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-
+import { Link } from "react-router-dom";
 const RubberDuckList = () => {
 	const [ducks, setDuck] = useState([]);
 
@@ -17,16 +17,18 @@ const RubberDuckList = () => {
 	return (
 		<>
 			<h1>Rubber ducks list</h1>
-			<ul>
+			<div className="container">
 				{ducks.map((duck) => {
 					return (
-						<li key={duck._id}>
-							<p>{duck.name}</p>
-							<img src={duck.picture} alt={duck.name} />
-						</li>
+						<div className="card" key={duck._id}>
+							<Link to={duck._id}>{duck.name}</Link>
+							<div className="wrapperDuck">
+								<img src={duck.picture} alt={duck.name} />
+							</div>
+						</div>
 					);
 				})}
-			</ul>
+			</div>
 		</>
 	);
 };

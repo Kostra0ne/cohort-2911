@@ -4,6 +4,7 @@ import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
 import RubberDuckList from "./Pages/RubberDuckList";
 import CreateDuckForm from "./Pages/CreateDuckForm";
+import OneDuck from "./Pages/OneDuck";
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/list" element={<RubberDuckList />} />
 				<Route path="/create" element={<CreateDuckForm />} />
+				<Route path="/list/:id" element={<OneDuck />} />
 			</Routes>
 		</div>
 	);
