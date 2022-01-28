@@ -1,6 +1,18 @@
-.App {
+nav {
+	display: flex;
+	gap: 1em;
 }
-
+code {
+	background-color: rgb(202, 202, 202);
+	border-radius: 0.25em;
+	padding: 0.1em;
+}
+.active {
+	color: red;
+}
+a {
+	color: rgb(6, 122, 44);
+}
 .App-logo {
 	height: 40vmin;
 	pointer-events: none;

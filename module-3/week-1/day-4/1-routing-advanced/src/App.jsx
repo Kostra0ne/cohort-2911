@@ -13,6 +13,7 @@ import Old from "./Pages/Old";
 import Parent from "./Pages/Parent";
 import Child from "./Pages/Child";
 import Mother from "./Pages/Mother";
+import NavbarBis from "./components/NavbarBis";
 
 function App() {
 	return (
@@ -26,7 +27,8 @@ function App() {
 					<Route path=":id" element={<Pokemon pokemons={data} />} />
 				</Route>
 
-				<Route path="/old" element={<Old />}>
+				<Route path="/old" element={<NavbarBis />}>
+					<Route index element={<Old />} />
 					<Route path="parent" element={<Parent />}>
 						<Route path="child" element={<Child />}></Route>
 					</Route>

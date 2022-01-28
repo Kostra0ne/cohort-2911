@@ -13,7 +13,9 @@ const Home = () => {
 
 			<pre>{JSON.stringify(location, null, 2)}</pre>
 
-			<p onClick={() => navigate("/about")}>Hellow</p>
+			<p onClick={() => navigate("/old")}>
+				Click me to go to the <code>/old</code> page !
+			</p>
 		</div>
 	);
 };
