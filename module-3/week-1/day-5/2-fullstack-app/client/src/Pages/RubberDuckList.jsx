@@ -1,12 +1,20 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+
+import useAuth from "../Auth/useAuth";
+
 const RubberDuckList = () => {
 	const [ducks, setDuck] = useState([]);
+	const auth = useAuth();
+	console.log(auth);
+	const storedToken = localStorage.getItem("authToken");
 
 	useEffect(() => {
 		axios
-			.get("http://localhost:8080/api/rubberducks")
+			.get("http://localhost:8080/api/rubberducks", {
+				headers: { authorization: `Bearer ${storedToken}` },
+			})
 			.then(({ data }) => {
 				console.log(data);
 				setDuck(data);

@@ -30,8 +30,60 @@ a {
 }
 
 a.active {
+	color: rgb(255, 255, 255);
+	text-shadow: 0 0 3px rgb(208, 255, 0);
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1em;
+}
+.form > .label {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.label label {
+	font-size: x-small;
+	position: absolute;
+	top: 2px;
+	left: 3px;
+}
+
+.label input {
+	height: 1.7em;
+	border: none;
+	background-color: rgb(65, 65, 65);
+	transition: all 500ms ease-in-out;
 	color: white;
-	text-shadow: 0 0 3px white;
+	font-style: italic;
+}
+.label input::placeholder {
+	font-size: x-small;
+	position: absolute;
+	top: 2px;
+	left: 3px;
+	transition: all 500ms ease-in-out;
+}
+.label input:focus {
+	background-color: whitesmoke;
+	border-radius: 1em;
+	color: black;
+	font-style: normal;
+	padding-left: 0.7em;
+	outline: none;
+}
+
+.label input:focus::placeholder {
+	opacity: 0;
+	position: absolute;
+	top: -12px;
+	left: 5px;
+	transition: all 500ms ease-in-out;
 }
 
 .App-header {

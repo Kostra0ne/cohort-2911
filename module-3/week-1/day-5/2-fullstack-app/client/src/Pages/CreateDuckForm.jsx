@@ -33,7 +33,7 @@ const CreateDuckForm = () => {
 
 	return (
 		<div>
-			<form onSubmit={handleSubmit}>
+			<form className="form" onSubmit={handleSubmit}>
 				{error !== "" && <p>{error}</p>}
 				<div>
 					<label htmlFor="name">name</label>

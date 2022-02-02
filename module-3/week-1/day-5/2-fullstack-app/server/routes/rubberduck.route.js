@@ -1,6 +1,5 @@
 const router = require("express").Router();
 const Duck = require("../models/RubberDucks.model");
-
 //! Routes are prefixed with /api
 
 router.get("/rubberducks", (req, res, next) => {
