@@ -1,0 +1,14 @@
+button {
+    border: unset;
+    padding: .4em 0;
+    color: white;
+    width: 5.5em;
+    cursor: pointer;
+}
+
+.container-button {
+    all:initial;
+    border: initial;
+    display: inline;
+    margin: .5em;
+}
