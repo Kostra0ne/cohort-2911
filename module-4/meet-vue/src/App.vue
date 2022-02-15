@@ -1,5 +1,6 @@
 <template>
   <h1 class="title">welcome @ vue</h1>
+  <DynamicStyles />
   <!-- <HelloWorld
     msg="Hello Vue 3 + Vite"
     year="2022"
@@ -35,13 +36,13 @@
   <!-- <hr />
   <VueRocks />
   <hr />
-  <SelectOptions /> -->
+  <SelectOptions />
   <hr />
   <Form />
   <hr />
   <Cats />
   <hr />
-  <AjaxSimple />
+  <AjaxSimple /> -->
 </template>
 
 <script setup>
@@ -76,6 +77,7 @@ import Cats from "./components/Cats.vue";
 import AjaxSimple from "./components/AjaxSimple.vue";
 import Summarize1 from "./components/Summarize1.vue";
 import SelectOptions from "./components/SelectOptions.vue";
+import DynamicStyles from "./components/DynamicStyles.vue";
 
 const Anna = { isIronhacker: true, name: "AB" };
 
