@@ -1,0 +1,12 @@
+.container {
+    all: initial;
+    display: flex;
+    border: 1px solid black;
+    flex-wrap: wrap;
+    width: 600px;
+    padding: .3em;
+}
+
+.container .cell:nth-child(even) {
+    background-color: red;
+}

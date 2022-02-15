@@ -1,0 +1,16 @@
+.color-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-container .singleColorContainer {
+    display: flex;
+    align-items: center;
+    margin: .5em;
+}
+
+.singleColorContainer .squareColor {
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+}

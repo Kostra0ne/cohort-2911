@@ -1,0 +1,41 @@
+.container-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.container-student {
+    all:initial;
+    display: flex;
+    border: 1px solid black;
+    align-items: center;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.container-student img {
+    height: 200px;
+    width: 200px;
+    border-radius: 1em;
+}
+
+.student-infos > ul {
+    list-style-type: none;
+    line-height: 1.7em;
+}
+
+.student-infos span {
+    font-weight: 700;
+}
+
+.container-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container-buttons button {
+    background-color: gray;
+    border: 1px solid black;
+    cursor: pointer;
+}

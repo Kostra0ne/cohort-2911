@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2em;
+}
+
+h2.title {
+  margin: 1.5em 0;
+}
+
+.container {
+  display: flex;
+  border: 1px solid black;
+  margin-bottom: 1em;
+  padding: 0.3em;
+  gap: 0.5em;
+}
+.container.BoxColor {
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.credit-card {
+  border-radius: 8px;
+  margin: 1em;
+  display: flex;
+  padding: 1em;
+  flex-direction: column;
+  align-items: center;
+  width: 410px;
+}
+
+.credit-card .logo {
+  height: 50px;
+  width: auto;
+  align-self: flex-end;
+  margin-bottom: 1em;
+}
+.credit-card .number {
+  justify-self: center;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+
+.credit-card .infos {
+  align-self: flex-start;
+  display: flex;
+  margin-right: 1em;
+}
+.credit-card .personal {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5em;
+}
+
+.container .rating {
+  font-size: 2em;
+}
+
+.driver-container {
+  background-color: rgb(50, 75, 145);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  padding: 2em;
+  border-radius: 3em;
+}
+
+.driver-container .container {
+  border: unset;
+  color: white;
+}
+.IdCard.content {
+  padding-left: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.bold {
+  font-weight: 700;
+}
+
+.driver-container .card {
+  display: flex;
+}
+
+.card .profile-photo {
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+  margin-right: 2em;
+}
+.profile-photo img {
+  height: 150px;
+  width: auto;
+  object-fit: cover;
+}
+
+.card .driver-infos {
+  display: flex;
+  flex-direction: column;
+}
+
+.dice img {
+  height: 100px;
+  width: auto;
+  margin-left: 3em;
+}
