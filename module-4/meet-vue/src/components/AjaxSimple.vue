@@ -20,7 +20,6 @@ const doFetch = async () => {
     isLoading.value = true;
     const res = await fetch("https://api.chucknorris.io/jokes/random");
     const json = await res.json();
-    console.log(json);
     joke.value = json.value;
   } catch (err) {
     error.value = err;
